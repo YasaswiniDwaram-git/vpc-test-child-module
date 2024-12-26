@@ -1,5 +1,5 @@
-output "VPC" {
-    value = module.vpc.VPC_id
+output "vpc" {
+    value = module.vpc.vpc_id
 }
 
 # output "az_info" {

@@ -1,5 +1,6 @@
 module "vpc" {
-    source = "../terraform-vpc-root-module"
+    # source = "../terraform-vpc-root-module" (below we use actual git module)(ref=main , since that's where VPC module script resides)
+    source = "git::https://github.com/YasaswiniDwaram-git/terraform-vpc-root-module.git?ref=main"
     project_name = var.project_name
     environment = var.environment
     common_tags = var.common_tags
